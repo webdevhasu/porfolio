@@ -57,7 +57,6 @@ body{
 .profile h2{
     font-size: 1.5rem;
     font-weight: 700;
-    /* margin-top: 3px; */
     color: #ffffff;
 }
 
@@ -346,6 +345,10 @@ body{
 }
 
 @media screen and (max-width:750px) {
+
+    .grid-container{
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
     .project-container{
         grid-template-columns: 1fr;
        
@@ -386,6 +389,16 @@ body{
         margin-top: 0px;
     }
 
+    .location{
+        margin-top: 18px;
+    }
+    .social{
+        display: flex;
+        gap: 10px;
+    }
+    .social img{
+        margin-left: 0px;
+    }
     .value{
         font-size:0.8rem;
         margin-top: 0px;
